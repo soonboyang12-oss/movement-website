@@ -1,0 +1,288 @@
+:root {
+  --header-height: 72px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --max-content-width: 1100px;
+  --text-color: #111;
+  --muted-color: #666;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  font-family: Inter, "Noto Sans KR", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Apple SD Gothic Neo", "맑은 고딕", sans-serif;
+  line-height: 1.6;
+  background: #fff; /* 기본 흰색 배경 유지 */
+}
+
+/* 링크 기본 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* 공용 컨테이너: 약 60~70% 폭으로 중앙 정렬 */
+.container {
+  width: 66%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+/* 고정 헤더 (투명 배경) */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--header-height);
+  background: transparent; /* 요청: 투명한 배경 */
+  z-index: 1000;
+}
+
+.nav {
+  height: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-link {
+  font-weight: 700; /* 헤더 텍스트 굵게 */
+  letter-spacing: 0.02em;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-5);
+}
+
+.menu-link {
+  font-weight: 700; /* 메뉴 굵게 */
+}
+
+/* 앵커 오프셋: 고정 헤더 높이만큼 여유 */
+.anchor,
+#cv {
+  scroll-margin-top: calc(var(--header-height) + var(--space-4));
+}
+
+/* 본문은 한 페이지 스크롤 (섹션별 독립 스크롤 없음) */
+.page {
+  padding-top: var(--header-height); /* 콘텐츠가 헤더 밑으로 숨지 않도록 */
+}
+
+/* Biography 섹션 */
+.biography-section {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+
+.biography-title {
+  margin: 0 0 var(--space-5);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.biography-section p {
+  margin-bottom: var(--space-4);
+  font-weight: 400;
+}
+
+/* CV 섹션 */
+.cv-section {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+
+.cv-title {
+  margin: 0 0 var(--space-5);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.cv-subtitle {
+  margin: var(--space-6) 0 var(--space-3);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.cv-list {
+  list-style: none;
+  margin: 0 0 var(--space-5);
+  padding: 0;
+}
+
+/* Collections 항목은 밑줄 제거 및 텍스트 스타일 통일 */
+.cv-list.collections-list .cv-item {
+  border-bottom: none;
+  padding: var(--space-1) 0;
+}
+
+.cv-list.collections-list .cv-item:last-child {
+  padding-bottom: var(--space-4); /* 마지막 항목 아래 여백 추가 */
+}
+
+/* 연도(굵게) · 전시 제목(일반) · 장소(이탤릭) */
+.cv-item .year {
+  font-weight: 700;
+  margin-right: var(--space-3);
+}
+.cv-item .title {
+  font-weight: 400;
+  margin-right: var(--space-3);
+}
+.cv-item .place {
+  font-style: italic;
+  color: var(--muted-color);
+}
+
+/* WORKS 섹션 */
+.works-section {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+
+.works-title {
+  margin: 0 0 var(--space-5);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.works-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-item {
+  padding: var(--space-2) 0;
+}
+
+.work-link {
+  display: block; /* 링크 영역 전체를 클릭 가능하게 함 */
+  color: var(--text-color);
+  font-weight: 700;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid #eee; /* 밑줄 효과 */
+  transition: all 0.2s ease;
+}
+
+.work-link:hover,
+.work-link:focus-visible {
+  text-decoration: none;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.work-item .year {
+  display: inline-block;
+  min-width: 50px;
+  margin-right: var(--space-3);
+  font-weight: 400;
+  color: var(--muted-color);
+}
+
+/* 오디오 플레이어 스타일 */
+.audio-player {
+  margin-top: var(--space-6);
+  max-width: 600px; /* 플레이어 최대 너비 설정 */
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
+/* 푸터: 페이지 하단(고정 아님) */
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: var(--space-6) 0;
+  background: #fff; /* 투명해도 되지만 텍스트 대비를 유지 */
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.contact .divider {
+  color: var(--muted-color);
+}
+
+.instagram i {
+  margin-right: var(--space-2);
+}
+
+/* 카피라이트 중앙 정렬 */
+.site-footer .container {
+  text-align: center;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .menu {
+    gap: var(--space-4);
+  }
+  .container {
+    width: 72%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+  .cv-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+  .menu {
+    gap: var(--space-3);
+  }
+  .contact {
+    justify-content: center;
+  }
+}
