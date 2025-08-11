@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movement — 드럼머신 샘플</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfQhbZLu9V8BxR2mP4cGygPZDjG7A8Jp1C4nVZ8C5XGx8D+4KfJ8r7JQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style.css 파일 연결 (상위 폴더에 있으므로 ../ 사용) -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <a id="top" aria-hidden="true"></a>
+
+    <!-- 메인 페이지의 헤더를 복사하여 붙여넣기 -->
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Primary">
+        <div class="brand">
+          <!-- 메인 페이지로 돌아가는 링크 경로 수정 -->
+          <a href="../index.html#top" class="brand-link" aria-label="Go to top">Movement</a>
+        </div>
+        <ul class="menu">
+          <!-- 메인 페이지의 각 섹션으로 이동하는 링크 경로 수정 -->
+          <li><a href="../index.html#about" class="menu-link">ABOUT</a></li>
+          <li><a href="../index.html#works" class="menu-link">WORKS</a></li>
+          <li><a href="../index.html#cv" class="menu-link">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page" id="main-content">
+      <section class="work-detail container">
+        <h1 class="work-detail-title">드럼머신 샘플</h1>
+        <p class="work-detail-year">2023</p>
+        <p class="work-detail-description">
+          이 녀석 역시 bandlab.com 에서 무료로 얻을 수 있는 wav 파일이다.
+        </p>
+
+        <div class="audio-player">
+          <audio controls>
+            <source src="../audio/Tasha_Catour_Beats_11_beats_210BPM_BANDLAB.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </section>
+    </main>
+
+    <!-- 메인 페이지의 푸터를 복사하여 붙여넣기 -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="contact">
+          <a class="email" href="mailto:hello@naver.com">hello@naver.com</a>
+          <span class="divider" aria-hidden="true">/</span>
+          <a
+            class="instagram"
+            href="https://www.instagram.com/yalearchitecture/p/B_Nn1qPHJJ2/?img_index=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="handle">@yunchul_kim</span>
+          </a>
+        </div>
+        <div class="copyright">© 2024 Yunchul Kim. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>
