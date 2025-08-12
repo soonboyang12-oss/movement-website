@@ -113,7 +113,7 @@ a:focus-visible {
 
 .biography-section p {
   margin-bottom: var(--space-4);
-  font-weight: 300;
+  font-weight: 100;
 }
 
 /* CV 섹션 */
@@ -157,7 +157,7 @@ a:focus-visible {
   margin-right: var(--space-3);
 }
 .cv-item .title {
-  font-weight: 300;
+  font-weight: 100;
   margin-right: var(--space-3);
 }
 .cv-item .place {
@@ -208,7 +208,7 @@ a:focus-visible {
   display: inline-block;
   min-width: 50px;
   margin-right: var(--space-3);
-  font-weight: 300;
+  font-weight: 100;
   color: var(--muted-color);
 }
 
@@ -304,4 +304,5 @@ a:focus-visible {
     justify-content: center;
   }
 }
+
 
