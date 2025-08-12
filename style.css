@@ -69,7 +69,7 @@ a:focus-visible {
 }
 
 .brand-link {
-  font-weight: 550;
+  font-weight: 700;
   letter-spacing: 0.02em;
   font-size: 0.9rem; /* 로고 텍스트 크기 */
 }
@@ -83,7 +83,7 @@ a:focus-visible {
 }
 
 .menu-link {
-  font-weight: 550;
+  font-weight: 700;
   font-size: 0.8rem; /* 메뉴 링크 텍스트 크기 */
 }
 
@@ -104,7 +104,7 @@ a:focus-visible {
 .biography-title {
   margin: 0 0 var(--space-5);
   font-size: 1.2rem; /* Biography 제목 크기 */
-  font-weight: 550;
+  font-weight: 700;
   letter-spacing: 0.01em;
 }
 
@@ -122,14 +122,14 @@ a:focus-visible {
 .cv-title {
   margin: 0 0 var(--space-5);
   font-size: 1.2rem; /* CV 섹션 제목 크기 */
-  font-weight: 550;
+  font-weight: 400;
   letter-spacing: 0.01em;
 }
 
 .cv-subtitle {
   margin: var(--space-6) 0 var(--space-3);
   font-size: 0.9rem; /* CV 소제목 크기 */
-  font-weight: 550;
+  font-weight: 400;
 }
 
 .cv-list {
@@ -152,7 +152,7 @@ a:focus-visible {
 }
 
 .cv-item .year {
-  font-weight: 550;
+  font-weight: 400;
   margin-right: var(--space-3);
 }
 .cv-item .title {
@@ -172,7 +172,7 @@ a:focus-visible {
 .works-title {
   margin: 0 0 var(--space-5);
   font-size: 1.2rem; /* Works 섹션 제목 크기 */
-  font-weight: 550;
+  font-weight: 700;
   letter-spacing: 0.01em;
 }
 
@@ -190,7 +190,7 @@ a:focus-visible {
 .work-link {
   display: block;
   color: var(--text-color);
-  font-weight: 550;
+  font-weight: 700;
   padding: var(--space-2) 0;
   border-bottom: 1px solid #eee;
   transition: all 0.2s ease;
@@ -307,3 +307,4 @@ a:focus-visible {
     justify-content: center;
   }
 }
+
