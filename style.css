@@ -9,7 +9,7 @@
   --space-7: 48px;
   --max-content-width: 1100px;
   --text-color: #111;
-  --muted-color: #666; /* 이탤릭체 색상을 위해 사용될 기본 회색 */
+  --muted-color: #666;
 }
 
 *,
@@ -25,11 +25,13 @@ html {
 body {
   margin: 0;
   color: var(--text-color);
-  font-family: Inter, "Noto Sans KR", system-ui, -apple-system, "Segoe UI",
-    Roboto, "Apple SD Gothic Neo", "맑은 고딕", sans-serif;
+  /* 얇은 폰트 굵기를 위해 Noto Sans KR과 Inter를 사용 */
+  font-family: 'Inter', 'Noto Sans KR', system-ui, -apple-system, 'Segoe UI',
+    Roboto, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
   line-height: 1.6;
   background: #fff;
-  font-size: 0.8rem; /* 전체 텍스트 기본 크기 절반 수준 */
+  font-size: 0.9rem; /* 전체 텍스트 기본 크기를 약간 키움 */
+  font-weight: 400; /* 기본 폰트 굵기를 보통으로 설정 */
 }
 
 a {
@@ -69,9 +71,9 @@ a:focus-visible {
 }
 
 .brand-link {
-  font-weight: 700;
+  font-weight: 700; /* 굵게 */
   letter-spacing: 0.02em;
-  font-size: 0.9rem; /* 로고 텍스트 크기 */
+  font-size: 1rem; /* 로고 텍스트 크기 */
 }
 
 .menu {
@@ -83,8 +85,8 @@ a:focus-visible {
 }
 
 .menu-link {
-  font-weight: 700;
-  font-size: 0.8rem; /* 메뉴 링크 텍스트 크기 */
+  font-weight: 700; /* 굵게 */
+  font-size: 0.9rem; /* 메뉴 링크 텍스트 크기 */
 }
 
 .anchor,
@@ -103,15 +105,15 @@ a:focus-visible {
 
 .biography-title {
   margin: 0 0 var(--space-5);
-  font-size: 1.2rem; /* Biography 제목 크기 */
-  font-weight: 700;
+  font-size: 1.5rem; /* Biography 제목 크기 */
+  font-weight: 700; /* 굵게 */
   letter-spacing: 0.01em;
 }
 
 .biography-section p {
   margin-bottom: var(--space-4);
-  font-weight: 100;
-  font-size: 0.9rem; /* Biography 본문 텍스트 크기 */
+  font-weight: 300; /* 얇게 */
+  font-size: 1rem; /* Biography 본문 텍스트 크기 */
 }
 
 .cv-section {
@@ -121,15 +123,15 @@ a:focus-visible {
 
 .cv-title {
   margin: 0 0 var(--space-5);
-  font-size: 1.2rem; /* CV 섹션 제목 크기 */
-  font-weight: 400;
+  font-size: 1.5rem; /* CV 섹션 제목 크기 */
+  font-weight: 700; /* 굵게 */
   letter-spacing: 0.01em;
 }
 
 .cv-subtitle {
   margin: var(--space-6) 0 var(--space-3);
-  font-size: 0.9rem; /* CV 소제목 크기 */
-  font-weight: 400;
+  font-size: 1rem; /* CV 소제목 크기 */
+  font-weight: 700; /* 굵게 */
 }
 
 .cv-list {
@@ -148,20 +150,19 @@ a:focus-visible {
 }
 
 .cv-item {
-  font-size: 0.8rem; /* CV 목록 항목 텍스트 크기 */
+  font-size: 0.9rem; /* CV 목록 항목 텍스트 크기 */
 }
 
 .cv-item .year {
-  font-weight: 400;
+  font-weight: 400; /* 보통 */
   margin-right: var(--space-3);
 }
 .cv-item .title {
-  font-weight: 100;
+  font-weight: 300; /* 얇게 */
   margin-right: var(--space-3);
 }
 .cv-item .place {
-  /* font-style: italic; 이탤릭체 제거 */
-  color: var(--muted-color); /* 회색 유지 */
+  color: var(--muted-color);
 }
 
 .works-section {
@@ -171,8 +172,8 @@ a:focus-visible {
 
 .works-title {
   margin: 0 0 var(--space-5);
-  font-size: 1.2rem; /* Works 섹션 제목 크기 */
-  font-weight: 700;
+  font-size: 1.5rem; /* Works 섹션 제목 크기 */
+  font-weight: 700; /* 굵게 */
   letter-spacing: 0.01em;
 }
 
@@ -184,13 +185,13 @@ a:focus-visible {
 
 .work-item {
   padding: var(--space-2) 0;
-  font-size: 0.8rem; /* Works 목록 항목 텍스트 크기 */
+  font-size: 0.9rem; /* Works 목록 항목 텍스트 크기 */
 }
 
 .work-link {
   display: block;
   color: var(--text-color);
-  font-weight: 700;
+  font-weight: 700; /* 굵게 */
   padding: var(--space-2) 0;
   border-bottom: 1px solid #eee;
   transition: all 0.2s ease;
@@ -207,7 +208,7 @@ a:focus-visible {
   display: inline-block;
   min-width: 50px;
   margin-right: var(--space-3);
-  font-weight: 100;
+  font-weight: 300; /* 얇게 */
   color: var(--muted-color);
 }
 
@@ -251,7 +252,7 @@ a:focus-visible {
 
 .footer-inner .contact,
 .footer-inner .copyright {
-  font-size: 0.7rem; /* 푸터 텍스트 크기 */
+  font-size: 0.8rem; /* 푸터 텍스트 크기 */
 }
 
 .contact {
@@ -287,11 +288,11 @@ a:focus-visible {
     width: 92%;
   }
   .cv-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .biography-title,
   .works-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -307,4 +308,3 @@ a:focus-visible {
     justify-content: center;
   }
 }
-
