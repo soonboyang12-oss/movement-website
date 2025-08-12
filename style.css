@@ -138,4 +138,172 @@ a:focus-visible {
   padding: 0;
 }
 
-.cv-list.collections-list .
+.cv-list.collections-list .cv-item {
+  border-bottom: none;
+  padding: var(--space-1) 0;
+}
+
+.cv-list.collections-list .cv-item:last-child {
+  padding-bottom: var(--space-4);
+}
+
+.cv-item {
+  font-size: 0.8rem; /* CV 목록 항목 텍스트 크기 */
+}
+
+.cv-item .year {
+  font-weight: 550;
+  margin-right: var(--space-3);
+}
+.cv-item .title {
+  font-weight: 100;
+  margin-right: var(--space-3);
+}
+.cv-item .place {
+  /* font-style: italic; 이탤릭체 제거 */
+  color: var(--muted-color); /* 회색 유지 */
+}
+
+.works-section {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+
+.works-title {
+  margin: 0 0 var(--space-5);
+  font-size: 1.2rem; /* Works 섹션 제목 크기 */
+  font-weight: 550;
+  letter-spacing: 0.01em;
+}
+
+.works-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-item {
+  padding: var(--space-2) 0;
+  font-size: 0.8rem; /* Works 목록 항목 텍스트 크기 */
+}
+
+.work-link {
+  display: block;
+  color: var(--text-color);
+  font-weight: 550;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.work-link:hover,
+.work-link:focus-visible {
+  text-decoration: none;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.work-item .year {
+  display: inline-block;
+  min-width: 50px;
+  margin-right: var(--space-3);
+  font-weight: 100;
+  color: var(--muted-color);
+}
+
+.audio-player {
+  margin-top: var(--space-6);
+  max-width: 600px;
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
+.video-container {
+  margin-top: var(--space-6);
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: var(--space-6) 0;
+  background: #fff;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer-inner .contact,
+.footer-inner .copyright {
+  font-size: 0.7rem; /* 푸터 텍스트 크기 */
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.contact .divider {
+  color: var(--muted-color);
+}
+
+.instagram i {
+  margin-right: var(--space-2);
+}
+
+.site-footer .container {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    gap: var(--space-4);
+  }
+  .container {
+    width: 72%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+  .cv-title {
+    font-size: 1rem;
+  }
+  .biography-title,
+  .works-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+  .menu {
+    gap: var(--space-3);
+  }
+  .contact {
+    justify-content: center;
+  }
+}
